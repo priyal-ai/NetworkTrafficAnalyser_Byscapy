@@ -5,7 +5,6 @@ from collections import Counter
 import threading
 import time
 import csv
-# import random
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
@@ -177,22 +176,6 @@ def start_sniffer():
 
     # Start threads for latency/jitter and packet sniffing
     threading.Thread(target=measure_latency_jitter, daemon=True).start()
-
-#     # Function to start sniffing packets
-# def start_sniffing(interface):
-#         global stop_sniffing_flag
-#         initialize_log()
-#         sniffer = AsyncSniffer(iface=interface, prn=analyze_packet, store=False)
-#         sniffer.start()
-#         try:
-#           while not stop_sniffing_flag:
-#             time.sleep(0.5)  # Keep the thread alive while sniffing
-#         finally:
-#            sniffer.stop()
-  
-
-
-#  messagebox.showinfo("Info", f"Started sniffing on {interface}")
 
 
 # Function to stop sniffing
