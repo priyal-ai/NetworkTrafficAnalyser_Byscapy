@@ -4,6 +4,7 @@ from scapy.all import AsyncSniffer, IP, TCP, UDP, ICMP, sr1
 from collections import Counter
 import threading
 import time
+import random
 import csv
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
